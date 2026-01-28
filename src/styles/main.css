@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background: #141414;
+  color: #fff;
+  font-family: Inter, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  margin-left: 1rem;
+  color: #64ffda;
+  text-decoration: none;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
