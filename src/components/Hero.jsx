@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-
+import heroImage from "../assets/1711611362666.jfif";
 function Hero() {
   const purple = "#bb86fc";
   
@@ -43,7 +43,7 @@ function Hero() {
         <div style={{ ...halfBoxStyle, alignItems: "center" }}>
           <div className="hero-image-wrapper" style={{ width: "100%", maxWidth: "380px" }}>
             <img
-              src="https://via.placeholder.com/400"
+              src={heroImage}
               alt="Samrawit Worku"
               style={{
                 width: "100%",
