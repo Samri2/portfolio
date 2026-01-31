@@ -46,8 +46,8 @@ function About() {
         <div style={{ flex: "1", minWidth: "300px", paddingRight: "2rem" }}>
           <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem" }}>Who am I?</h2>
           <p style={{ lineHeight: "1.8", marginTop: "2rem" }}>
-            I am a Software Engineering student at <strong>Debre Markos University</strong>, 
-            specializing in full-stack development and cybersecurity.
+            I am a Software Engineering student at <strong>Wolaita sodo University</strong>, 
+            specializing in full-stack development and cybersecurity(IS Audit).
           </p>
           <p style={{ lineHeight: "1.8" }}>
             My experience includes a <strong>4-month internship at INSA</strong>, conducting security testing for mobile apps.
