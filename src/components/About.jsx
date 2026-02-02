@@ -105,15 +105,15 @@ function About() {
           {/* Replace the src with your actual image paths */}
           <div className="cert-card" style={{ textAlign: 'center' }}>
              <img src={heroImage} alt="React Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
-             <p style={{ marginTop: "10px" }}>React - Udemy</p>
+             <p style={{ marginTop: "10px" }}>frontend web development-ALX</p>
           </div>
           <div className="cert-card" style={{ textAlign: 'center' }}>
              <img src={heroImagee} alt="IBM Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
-             <p style={{ marginTop: "10px" }}>Project Management - IBM</p>
+             <p style={{ marginTop: "10px" }}>Professional Development Skill-ALX</p>
           </div>
           <div className="cert-card" style={{ textAlign: 'center' }}>
              <img src={heroImageee} alt="Marketing Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
-             <p style={{ marginTop: "10px" }}>Digital Marketing - Udemy</p>
+             <p style={{ marginTop: "10px" }}>Leadership and Fundamentals of Banking</p>
           </div>
         </div>
       </div>

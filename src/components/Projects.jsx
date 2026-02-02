@@ -27,7 +27,7 @@ function Projects() {
     },
    
     { 
-      title: "Internship & Career System", 
+      title: "Internship & Career management System", 
       category: "Fullstack", 
       desc: "Web-based management system for university-industry linkages using PHP and SQL.", 
       progress: "100%" 
@@ -68,11 +68,11 @@ function Projects() {
       <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem", marginBottom: "0.5rem" }}>
         Proven Solutions
       </h2>
-      <p style={{ color: "#aaa", marginBottom: "2rem" }}>A selection of my work in Fullstack Development and IT Security.</p>
+      <p style={{ color: "#aaa", marginBottom: "2rem" }}>A selection of my work in frontend and fullstack development.</p>
 
       {/* Filter Bar */}
       <div style={{ marginBottom: "3rem", display: "flex", flexWrap: "wrap", gap: "10px" }}>
-        {['All', 'Frontend', 'Fullstack', 'Security'].map(cat => (
+        {['All', 'Frontend', 'Fullstack'].map(cat => (
           <button 
             key={cat}
             className={`filter-btn ${filter === cat ? 'active' : ''}`}
