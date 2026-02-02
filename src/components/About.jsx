@@ -46,7 +46,7 @@ function About() {
         <div style={{ flex: "1", minWidth: "300px", paddingRight: "2rem" }}>
           <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem" }}>Who am I?</h2>
           <p style={{ lineHeight: "1.8", marginTop: "2rem" }}>
-          I build secure, scalable, and user-friendly web experiences. With a background in Banking IT Audit and a passion for React.js, I bridge the gap between robust security and modern frontend design.
+          I build secure, scalable, and user-friendly web experiences. With ui/ux experiece in figma, frontend web development and a background in Banking IT Audit and a passion for React.js, I bridge the gap between robust security and modern frontend design.
           </p>
           <p style={{ lineHeight: "1.8" }}>
             My experience includes a <strong>IS auditor in enat bank</strong> conducting audit application architecture to ensure secure coding practices and performance and also, Verified that in-house developed systems adhered to OWASP Application Security Standards..
@@ -63,7 +63,10 @@ function About() {
   <div style={skillBarContainer}>
     <div className="skill-fill" style={{ "--progress": "90%" }}></div>
   </div>
-
+  <label>UI/UX in Figma - 90%</label>
+  <div style={skillBarContainer}>
+    <div className="skill-fill" style={{ "--progress": "90%" }}></div>
+  </div>
   {/* The Backend/Database Skill */}
   <label>Backend Development (Node.js & PostgreSQL) - 85%</label>
   <div style={skillBarContainer}>
