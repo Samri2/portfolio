@@ -46,11 +46,10 @@ function About() {
         <div style={{ flex: "1", minWidth: "300px", paddingRight: "2rem" }}>
           <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem" }}>Who am I?</h2>
           <p style={{ lineHeight: "1.8", marginTop: "2rem" }}>
-            I am a Software Engineering student at <strong>Wolaita sodo University</strong>, 
-            specializing in full-stack development and cybersecurity(IS Audit).
+          I build secure, scalable, and user-friendly web experiences. With a background in Banking IT Audit and a passion for React.js, I bridge the gap between robust security and modern frontend design.
           </p>
           <p style={{ lineHeight: "1.8" }}>
-            My experience includes a <strong>4-month internship at INSA</strong>, conducting security testing for mobile apps.
+            My experience includes a <strong>IS auditor in enat bank</strong> conducting audit application architecture to ensure secure coding practices and performance and also, Verified that in-house developed systems adhered to OWASP Application Security Standards..
           </p>
         </div>
 
@@ -59,20 +58,29 @@ function About() {
           <h2 style={{ color: teal, borderLeft: `4px solid ${teal}`, paddingLeft: "1rem" }}>Skills</h2>
           
           <div style={{ marginTop: "2rem" }}>
-            <label>MERN Stack - 90%</label>
-            <div style={skillBarContainer}>
-              <div className="skill-fill" style={{ "--progress": "90%" }}></div>
-            </div>
+  {/* The Frontend Skill */}
+  <label>React.js & Frontend Architecture - 90%</label>
+  <div style={skillBarContainer}>
+    <div className="skill-fill" style={{ "--progress": "90%" }}></div>
+  </div>
 
-            <label>Penetration Testing - 85%</label>
-            <div style={skillBarContainer}>
-              <div className="skill-fill" style={{ "--progress": "85%" }}></div>
-            </div>
+  {/* The Backend/Database Skill */}
+  <label>Backend Development (Node.js & PostgreSQL) - 85%</label>
+  <div style={skillBarContainer}>
+    <div className="skill-fill" style={{ "--progress": "85%" }}></div>
+  </div>
 
-            <label>React / Node.js - 95%</label>
-            <div style={skillBarContainer}>
-              <div className="skill-fill" style={{ "--progress": "95%" }}></div>
-            </div>
+  {/* The Banking-Specific Skill */}
+  <label>Application Security & OWASP Standards - 80%</label>
+  <div style={skillBarContainer}>
+    <div className="skill-fill" style={{ "--progress": "80%" }}></div>
+  </div>
+
+  {/* The Tooling Skill */}
+  <label>API Testing (Postman) & Git - 90%</label>
+  <div style={skillBarContainer}>
+    <div className="skill-fill" style={{ "--progress": "90%" }}></div>
+  </div>
           </div>
         </div>
       </div>
