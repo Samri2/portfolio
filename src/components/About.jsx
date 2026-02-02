@@ -1,3 +1,7 @@
+import heroImage from "../assets/69-front-end-web-development-certificate-samrawit-worku (1).png";
+import heroImagee from "../assets/89-professional-foundations-certificate-samrawit-belete (2).png";
+import heroImageee from "../assets/Capture.PNG";
+
 function About() {
   const purple = "#bb86fc";
   const teal = "#03dac6";
@@ -100,15 +104,15 @@ function About() {
         }}>
           {/* Replace the src with your actual image paths */}
           <div className="cert-card" style={{ textAlign: 'center' }}>
-             <img src="https://via.placeholder.com/300x200?text=Udemy+React" alt="React Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
+             <img src={heroImage} alt="React Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
              <p style={{ marginTop: "10px" }}>React - Udemy</p>
           </div>
           <div className="cert-card" style={{ textAlign: 'center' }}>
-             <img src="https://via.placeholder.com/300x200?text=IBM+Project+Mgmt" alt="IBM Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
+             <img src={heroImagee} alt="IBM Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
              <p style={{ marginTop: "10px" }}>Project Management - IBM</p>
           </div>
           <div className="cert-card" style={{ textAlign: 'center' }}>
-             <img src="https://via.placeholder.com/300x200?text=Udemy+Marketing" alt="Marketing Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
+             <img src={heroImageee} alt="Marketing Cert" className="cert-img" style={{ width: "100%", borderRadius: "8px", transition: "0.3s" }} />
              <p style={{ marginTop: "10px" }}>Digital Marketing - Udemy</p>
           </div>
         </div>

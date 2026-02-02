@@ -1,21 +1,45 @@
 import React, { useState } from 'react';
 
 function Projects() {
-  const [filter, setFilter] = useState('All'); // State to track the current filter
+  const [filter, setFilter] = useState('All');
 
   const purple = "#bb86fc";
   const teal = "#03dac6";
 
   const projectData = [
-    { title: "Hotel Store Management", category: "Fullstack", desc: "MERN stack system managing hotel inventory.", progress: "85%" },
-    { title: "Hotel Management System", category: "Fullstack", desc: "Handles reservations, billing, and customers.", progress: "90%" },
-    { title: "Netflix Clone", category: "Frontend", desc: "Streaming platform with video playback and UI.", progress: "80%" },
-    { title: "E-commerce Platform", category: "Fullstack", desc: "Marketplace with auth and secure payments.", progress: "95%" },
-    { title: "Android Pen Testing", category: "Mobile", desc: "Security auditing of Amole, Hibir, and ADFA.", progress: "85%" },
-    { title: "Calculator App", category: "Mobile", desc: "Java-based Android arithmetic operations.", progress: "75%" },
+    { 
+      title: "Bank Dept. Document Sharing", 
+      category: "Fullstack", 
+      desc: "Secure PERN stack platform for internal bank document management. Uses Node, Express, and PostgreSQL.", 
+      progress: "100%" 
+    },
+    { 
+      title: "Live Exchange Rate Web App", 
+      category: "Frontend", 
+      desc: "Real-time currency tracking system built with React and Tailwind CSS, deployed on Vercel.", 
+      progress: "100%" 
+    },
+    { 
+      title: "Language Text-to-Speech", 
+      category: "Frontend", 
+      desc: "Accessibility tool converting text to natural speech with multi-language support and speed control.", 
+      progress: "95%" 
+    },
+   
+    { 
+      title: "Internship & Career System", 
+      category: "Fullstack", 
+      desc: "Web-based management system for university-industry linkages using PHP and SQL.", 
+      progress: "100%" 
+    },
+    { 
+      title: "Agricultural Web Portal", 
+      category: "Fullstack", 
+      desc: "Full-stack data management platform for agricultural tracking and reporting.", 
+      progress: "90%" 
+    },
   ];
 
-  // Logic to filter projects based on selection
   const filteredProjects = filter === 'All' 
     ? projectData 
     : projectData.filter(p => p.category === filter);
@@ -33,19 +57,22 @@ function Projects() {
             cursor: pointer; 
             margin-right: 15px; 
             transition: 0.3s; 
+            font-weight: 500;
           }
           .filter-btn.active { background: ${purple}; color: #141414; }
-          .project-card:hover { transform: translateY(-10px); border-color: ${purple}; }
+          .filter-btn:hover { background: rgba(187, 134, 252, 0.1); }
+          .project-card:hover { transform: translateY(-10px); border-color: ${purple} !important; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         `}
       </style>
 
-      <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem", marginBottom: "2rem" }}>
-        My Projects
+      <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem", marginBottom: "0.5rem" }}>
+        Proven Solutions
       </h2>
+      <p style={{ color: "#aaa", marginBottom: "2rem" }}>A selection of my work in Fullstack Development and IT Security.</p>
 
       {/* Filter Bar */}
-      <div style={{ marginBottom: "3rem" }}>
-        {['All', 'Frontend', 'Fullstack', 'Mobile'].map(cat => (
+      <div style={{ marginBottom: "3rem", display: "flex", flexWrap: "wrap", gap: "10px" }}>
+        {['All', 'Frontend', 'Fullstack', 'Security'].map(cat => (
           <button 
             key={cat}
             className={`filter-btn ${filter === cat ? 'active' : ''}`}
@@ -59,33 +86,36 @@ function Projects() {
       {/* Projects Grid */}
       <div style={{ 
         display: "grid", 
-        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
-        gap: "20px" 
+        gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", 
+        gap: "25px" 
       }}>
         {filteredProjects.map((project, index) => (
           <div key={index} className="project-card" style={{
             backgroundColor: "#1e1e1e",
-            padding: "1.5rem",
-            borderRadius: "12px",
+            padding: "1.8rem",
+            borderRadius: "16px",
             border: "1px solid #333",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            transition: "0.3s"
+            transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
           }}>
             <div>
-              <span style={{ color: purple, fontSize: "0.7rem", textTransform: "uppercase" }}>{project.category}</span>
-              <h3 style={{ color: teal, margin: "10px 0" }}>{project.title}</h3>
-              <p style={{ color: "#ccc", fontSize: "0.9rem" }}>{project.desc}</p>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: purple, fontSize: "0.75rem", fontWeight: "bold", letterSpacing: "1px" }}>{project.category}</span>
+                {project.progress === "100%" && <span style={{ color: teal, fontSize: "0.7rem" }}>● Deployed</span>}
+              </div>
+              <h3 style={{ color: "#fff", margin: "12px 0", fontSize: "1.4rem" }}>{project.title}</h3>
+              <p style={{ color: "#aaa", fontSize: "0.95rem", lineHeight: "1.5" }}>{project.desc}</p>
             </div>
             
-            <div style={{ marginTop: "20px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", marginBottom: "5px" }}>
-                <span>Completion</span>
-                <span>{project.progress}</span>
+            <div style={{ marginTop: "25px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", marginBottom: "8px", color: "#eee" }}>
+                <span>Phase</span>
+                <span>{project.progress === "100%" ? "Completed" : `In Progress (${project.progress})`}</span>
               </div>
-              <div style={{ width: "100%", height: "6px", backgroundColor: "#333", borderRadius: "10px", overflow: "hidden" }}>
-                <div style={{ width: project.progress, height: "100%", background: purple }}></div>
+              <div style={{ width: "100%", height: "4px", backgroundColor: "#333", borderRadius: "10px", overflow: "hidden" }}>
+                <div style={{ width: project.progress, height: "100%", background: `linear-gradient(90deg, ${purple}, ${teal})` }}></div>
               </div>
             </div>
           </div>
