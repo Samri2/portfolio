@@ -61,7 +61,7 @@ function Hero() {
             Hi, I'm Samrawit Worku
           </h1>
           <h2 style={{ color: purple, fontSize: "1.2rem", fontWeight: "400", opacity: 0.9 }}>
-            Frontend Developer • Backend Developer • Fullstack Developer • IT Auditor • Penetration Tester
+            Frontend Developer • Backend Developer • Fullstack Developer • IT Auditor 
           </h2>
           <p style={{ lineHeight: "1.6", margin: "1rem 0", color: "#ccc" }}>
             I create efficient, scalable, and user-friendly web applications. 
