@@ -56,17 +56,19 @@ function Hero() {
         </div>
 
         {/* RIGHT BOX: Text (50%) */}
-        <div style={halfBoxStyle}>
-          <h1 style={{ color: purple, fontSize: "3rem", marginBottom: "0.5rem", marginTop: 0 }}>
-            Hi, I'm Samrawit Worku
-          </h1>
-          <h2 style={{ color: purple, fontSize: "1.2rem", fontWeight: "400", opacity: 0.9 }}>
-            Frontend Developer • Backend Developer • Fullstack Developer • IT Auditor 
-          </h2>
-          <p style={{ lineHeight: "1.6", margin: "1rem 0", color: "#ccc" }}>
-            I create efficient, scalable, and user-friendly web applications. 
-            Specializing in MERN stack development and penetration testing.
-          </p>
+      <div style={halfBoxStyle}>
+  <h1 style={{ color: purple, fontSize: "3rem", marginBottom: "0.5rem", marginTop: 0 }}>
+    Hi, I'm Samrawit Worku
+  </h1>
+  <h2 style={{ color: purple, fontSize: "1.2rem", fontWeight: "400", opacity: 0.9 }}>
+    Frontend Developer • Fullstack Engineer • Secure Systems Specialist
+  </h2>
+  <p style={{ lineHeight: "1.6", margin: "1rem 0", color: "#ccc" }}>
+    I build secure, high-performance web applications tailored for the financial sector. 
+    Specializing in <strong>React, Node.js, and PostgreSQL</strong>, I combine my 
+    experience in <strong>IT Auditing</strong> with modern development practices to 
+    deliver robust, user-centric digital solutions.
+  </p>
           
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <a href="#about" className="hero-button">See All</a>
