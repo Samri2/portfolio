@@ -50,10 +50,10 @@ function About() {
         <div style={{ flex: "1", minWidth: "300px", paddingRight: "2rem" }}>
           <h2 style={{ color: purple, borderLeft: `4px solid ${purple}`, paddingLeft: "1rem" }}>Who am I?</h2>
           <p style={{ lineHeight: "1.8", marginTop: "2rem" }}>
-          I build secure, scalable, and user-friendly web experiences. With ui/ux experiece in figma, frontend web development and a background in Banking IT Audit and a passion for React.js, I bridge the gap between robust security and modern frontend design.
-          </p>
+          
+          </p>I build secure, scalable, and user-friendly web experiences. With ui/ux experiece in figma, frontend web development and a background in Banking IT Audit and a passion for React.js, I bridge the gap between robust security and modern frontend design.
           <p style={{ lineHeight: "1.8" }}>
-            My experience includes a <strong>IS auditor in enat bank</strong> conducting audit application architecture to ensure secure coding practices and performance and also, Verified that in-house developed systems adhered to OWASP Application Security Standards..
+           
           </p>
         </div>
 
